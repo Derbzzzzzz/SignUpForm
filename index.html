@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="title">
+            <div class="container">
+                <img src="logo2.png">
+                <div class="brandName">Patriots</div>
+            </div>
+        </div>
+        <div class="credit">Photo by <a href="https://unsplash.com/@marko2dan">Marko Tudan</a> on <a href="https://unsplash.com/">Unsplash</a></div> 
+    </div>
+    <div class="formSpace">
+        <div class="intro">
+            <p>Over the years, the New England Patriots have suceeded thanks to your support. The Patriots are currently looking for their seventh Lombardi Tromphy. They need your help!</p>
+            <p>Sign up below to show your support!</p>
+        </div>
+        <form action="formHandler.php" method="post">
+            <h2 class="formTitle">Fill Out Your Information</h2>
+            <div class="formcontainer">
+                <div class="set1">
+                    <div class="field1 field">
+                        <legend for="firstName">First Name</legend>
+                        <input type="text" id="firstName" required placeholder=" ">
+                    </div>
+                    <div class="field2 field">
+                        <legend for="lastName">Last Name</legend>
+                        <input type="text" id="lastName" required placeholder=" ">
+                    </div>
+                    <div class="field3 field">
+                        <legend for="email">Email</legend>
+                        <input type="email" id="email" required placeholder=" ">
+                    </div>
+                </div>
+                <div class="set2">
+                    <div class="field4 field">
+                        <legend for="phoneNumber">Phone Number</legend>
+                        <input type="text" id="phoneNumber" required placeholder="888-888-8888" pattern="[0-9]{3}(-)?[0-9]{3}(-)?[0-9]{4}" oninvalid="this.setCustomValidity('Enter 9 Digit Phone Number')"
+                        oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="field5 field">
+                        <legend for="pass">Password</legend>
+                        <input type="password" id="pass" minlength="7" required placeholder=" ">
+                    </div>
+                    <div class="field6 field">
+                        <legend for="pass2">Confirm Password</legend>
+                        <input type="password" id="pass2" minlength="7" required placeholder=" ">
+                    </div>
+                </div>
+            </div>
+            <div class="button"><button type="submit">Create Account</button></div>
+        </form>
+        <div class="bottom">
+            <div class="login">Already have an account? <a href="index.html">Log In</a></div>
+        </div>
+    </div>
+    
+</body>
+</html>

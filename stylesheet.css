@@ -1,0 +1,192 @@
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+  }
+
+html{
+    margin: 0;
+    font-size: 16px;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    height: 100%;
+    margin: 0;
+
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    background-image: url("patriots.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: antiquewhite;
+    background: rgb(0, 0, 0, 0.2);
+    height: 15%;
+    margin-top: 5vh;
+}
+
+.brandName{
+    font-size: 5vw;
+    font-family: Norse, sans-serif;
+    margin-right: 5vw;
+    margin-top: 1vh;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: auto;
+    height: 6vw;
+    transform: rotate(-10deg);
+    margin-top: 1vh;
+    margin-right: 2vw;
+}
+
+a{
+    color: aliceblue;
+}
+
+.credit{
+    margin-top: auto;
+    text-align: center;
+    height: 5rem;
+    font-size: 1.5rem;
+    color: antiquewhite;
+}
+
+.formSpace{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    background-color: lightgray;
+    font-size: 1.3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}
+
+.intro{
+    padding-top: 5vh;
+    margin-left: 40px;
+    font-size: 1.5rem;
+}
+
+.formcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(104, 104, 104);
+    padding-left: 30px;
+    padding-right: 30px;
+    gap:10px
+
+}
+
+.formTitle{
+    font-family: cursive;
+    font-size: 2rem;
+    padding-left: 30px;
+}
+
+form{
+    background-color: whitesmoke;
+    padding: 10px;
+    border: solid 2px whitesmoke;
+    border-radius: 10px;
+    box-shadow: 12px 6px 1px 0.5px rgba(160, 160, 167, 1);
+}
+
+legend{
+    font-size: 1.2rem;
+}
+
+input{
+    width: 23vw;
+    border: solid lightgrey 1px;
+    border-radius: 5px;
+    height: 20px
+}
+
+
+
+input:focus{
+    outline: none;
+    border: solid blue 1px;
+    box-shadow: 1px 1px 1px 1px lightblue;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown){
+    background-color: rgb(248, 226, 229);
+    border: solid red 0.5px
+}
+
+input:valid:not(:focus):not(:placeholder-shown){
+    border: solid rgb(73, 231, 73) 1px;
+}
+
+
+
+.set1, .set2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: x-large;
+    font-family: cursive;
+    border-radius: 10px;
+    border: 5px;
+    background-color: rgb(175, 219, 247);
+    padding: 20px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 2vh;
+    margin-left: 45px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px){
+    body{
+        flex-direction: column;
+        height: auto;
+    }
+    .sidebar{
+        width: 100vw;
+        height: 1000px;
+    }
+    .formSpace{
+        width: 100vw;
+    }
+    img{
+        height: 80px;
+    }
+    .brandName{
+        font-size: 70px;
+    }
+}
