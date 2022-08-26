@@ -27,40 +27,40 @@
             <div class="formcontainer">
                 <div class="set1">
                     <div class="field1 field">
-                        <legend for="firstName">First Name</legend>
+                        <label for="firstName">First Name</label>
                         <input type="text" id="firstName" required placeholder=" ">
                     </div>
                     <div class="field2 field">
-                        <legend for="lastName">Last Name</legend>
+                        <label for="lastName">Last Name</label>
                         <input type="text" id="lastName" required placeholder=" ">
                     </div>
                     <div class="field3 field">
-                        <legend for="email">Email</legend>
+                        <label for="email">Email</label>
                         <input type="email" id="email" required placeholder=" ">
                     </div>
                 </div>
                 <div class="set2">
                     <div class="field4 field">
-                        <legend for="phoneNumber">Phone Number</legend>
+                        <label for="phoneNumber">Phone Number</label>
                         <input type="text" id="phoneNumber" required placeholder="888-888-8888" pattern="[0-9]{3}(-)?[0-9]{3}(-)?[0-9]{4}" oninvalid="this.setCustomValidity('Enter 9 Digit Phone Number')"
                         oninput="this.setCustomValidity('')">
                     </div>
                     <div class="field5 field">
-                        <legend for="pass">Password</legend>
-                        <input type="password" id="pass" minlength="7" required placeholder=" ">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" minlength="7" required placeholder=" " onkeyup='check();'>
                     </div>
                     <div class="field6 field">
-                        <legend for="pass2">Confirm Password</legend>
-                        <input type="password" id="pass2" minlength="7" required placeholder=" ">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" minlength="7" required placeholder=" " onkeyup='check();'>
                     </div>
                 </div>
             </div>
             <div class="button"><button type="submit">Create Account</button></div>
         </form>
         <div class="bottom">
-            <div class="login">Already have an account? <a href="index.html">Log In</a></div>
+            <div class="login">Already have an account?<br> <a href="index.html">Log In</a></div>
         </div>
     </div>
-    
+    <script src="form.js"></script>
 </body>
 </html>

@@ -84,24 +84,24 @@ a{
     padding-top: 5vh;
     margin-left: 40px;
     font-size: 1.5rem;
+    width: 30vw;
 }
 
 .formcontainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(104, 104, 104);
     padding-left: 30px;
     padding-right: 30px;
-    gap:10px
+    gap:50px
 
 }
 
 .formTitle{
-    font-family: cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
     padding-left: 30px;
 }
@@ -114,8 +114,9 @@ form{
     box-shadow: 12px 6px 1px 0.5px rgba(160, 160, 167, 1);
 }
 
-legend{
+label{
     font-size: 1.2rem;
+    display: block;
 }
 
 input{
@@ -154,7 +155,7 @@ button{
     margin-top: 30px;
     margin-left: 30px;
     font-size: x-large;
-    font-family: cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 10px;
     border: 5px;
     background-color: rgb(175, 219, 247);
@@ -168,10 +169,10 @@ button{
     padding-top: 2vh;
     margin-left: 45px;
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 1100px){
     body{
         flex-direction: column;
         height: auto;
@@ -188,5 +189,9 @@ button{
     }
     .brandName{
         font-size: 70px;
+    }
+    .intro{
+        margin-right: 40px;
+        width: auto;
     }
 }
