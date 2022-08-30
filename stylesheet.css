@@ -83,7 +83,7 @@ a{
 .intro{
     padding-top: 5vh;
     margin-left: 40px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 30vw;
 }
 
@@ -120,7 +120,7 @@ label{
 }
 
 input{
-    width: 23vw;
+    width: 20vw;
     border: solid lightgrey 1px;
     border-radius: 5px;
     height: 20px
